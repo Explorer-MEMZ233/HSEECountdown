@@ -124,7 +124,8 @@ function updateCountdown(targetDate) {
             console.error('未能找到一个或多个必需的DOM元素');
         }
     }*/
-
+    // 不知为何上方代码就是无法正常运行，总是NaN，故注释，如果有大佬帮看看就好了
+    
     // 每秒更新一次
     setTimeout(updateCountdown, 1000);
 }
