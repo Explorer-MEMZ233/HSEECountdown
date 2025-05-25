@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中考倒计时 - 教室大屏版</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <select id="provinceSelect" class="province-select">
+        <option value="beijing">北京</option>
+        <option value="tianjin">天津</option>
+        <option value="hebei">河北</option>
+        <option value="shanxi">山西</option>
+        <option value="neimenggu">内蒙古</option>
+        <option value="liaoning">辽宁</option>
+        <option value="jilin">吉林</option>
+        <option value="heilongjiang">黑龙江</option>
+        <option value="shanghai">上海</option>
+        <option value="jiangsu">江苏</option>
+        <option value="zhejiang">浙江</option>
+        <option value="anhui">安徽</option>
+        <option value="fujian">福建</option>
+        <option value="jiangxi">江西</option>
+        <option value="shandong">山东</option>
+        <option value="henan">河南</option>
+        <option value="hubei">湖北</option>
+        <option value="hunan">湖南</option>
+        <option value="guangdong">广东</option>
+        <option value="guangxi">广西</option>
+        <option value="hainan">海南</option>
+        <option value="chongqing">重庆</option>
+        <option value="sichuan">四川</option>
+        <option value="guizhou">贵州</option>
+        <option value="yunnan">云南</option>
+        <option value="xizang">西藏</option>
+        <option value="shaanxi">陕西</option>
+        <option value="gansu">甘肃</option>
+        <option value="qinghai">青海</option>
+        <option value="ningxia">宁夏</option>
+        <option value="xinjiang">新疆</option>
+    </select>
+
+    <div class="countdown-container">
+        <div class="event-title" id="eventTitle">距2025河南中考还剩</div>
+        <div class="event-title-en" id="eventTitleEn">HENAN HIGH SCHOOL ENTRANCE EXAM COUNTDOWN</div>
+        <div>
+            <span class="time-number" id="days">0</span>
+            <span class="time-unit" id="days-unit">天</span>
+            <span class="time-number" id="hours" style="display:none">0</span>
+            <span class="time-unit" id="hours-unit" style="display:none">小时</span>
+            <span class="time-number" id="minutes" style="display:none">0</span>
+            <span class="time-unit" id="minutes-unit" style="display:none">分</span>
+            <span class="time-number" id="seconds" style="display:none">0</span>
+            <span class="time-unit" id="seconds-unit" style="display:none">秒</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

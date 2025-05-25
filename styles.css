@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Microsoft YaHei", "黑体", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.countdown-container {
+    text-align: center;
+    width: 90vw;
+    max-width: 1200px;
+}
+
+.event-title {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    position: relative;
+    letter-spacing: 0.5vw;
+}
+
+.event-title::before {
+    content: "";
+    position: absolute;
+    left: -4vw;
+    top: 0;
+    height: 100%;
+    width: 1vw;
+    background: linear-gradient(to bottom, #ff0000, #ff6b6b);
+}
+
+.event-title-en {
+    font-size: 2.5vw;
+    color: #aaa;
+    margin-bottom: 4vw;
+    letter-spacing: 0.3vw;
+}
+
+.time-number {
+    font-size: 10vw;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0 0 2vw rgba(255, 0, 0, 0.5);
+    margin: 0 0.5vw;
+}
+
+.time-unit {
+    font-size: 4vw;
+    margin-left: 1vw;
+    vertical-align: middle;
+}
+
+.warning-mode.time-number {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        text-shadow: 0 0 2vw rgba(255, 0, 0, 0.5);
+    }
+
+    to {
+        text-shadow: 0 0 5vw red, 0 0 10vw orange;
+    }
+}
+
+.province-select {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
